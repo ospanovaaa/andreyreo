@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Тимур Оспанов — Личное дело</title>
+<meta name="description" content="Личное дело администратора проекта LIVE RUSSIA. Позывные Andrey Oreo и Frank Zetix, послужной список, контакты.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=PT+Sans:wght@400;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header class="topbar">
+  <div class="topbar__mark">
+    <svg viewBox="0 0 40 40" class="topbar__seal" aria-hidden="true">
+      <circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="1.4"/>
+      <circle cx="20" cy="20" r="13" fill="none" stroke="currentColor" stroke-width="0.8"/>
+      <text x="20" y="24" text-anchor="middle" class="topbar__seal-text">ЛР</text>
+    </svg>
+    <span>LIVE RUSSIA · СЕВАСТОПОЛЬ</span>
+  </div>
+  <nav class="topbar__nav">
+    <a href="#about">Обо мне</a>
+    <a href="#record">Послужной список</a>
+    <a href="#contacts">Контакты</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero__inner">
+      <p class="eyebrow stamp-in">Личное дело № 07‑26</p>
+      <h1 class="hero__title stamp-in">Тимур Оспанов</h1>
+      <p class="hero__subtitle stamp-in">
+        Действующий позывной <strong>Andrey&nbsp;Oreo</strong> ·
+        Junior Moderator, LIVE RUSSIA — Севастополь
+      </p>
+      <div class="hero__status stamp-in">
+        <span class="dot dot--active"></span> На службе с 07.07.2026
+      </div>
+    </div>
+    <div class="hero__seal-wrap">
+      <svg class="hero__seal-big" viewBox="0 0 200 200" aria-hidden="true">
+        <circle cx="100" cy="100" r="92" fill="none" stroke="currentColor" stroke-width="2"/>
+        <circle cx="100" cy="100" r="78" fill="none" stroke="currentColor" stroke-width="1"/>
+        <path id="sealCircle" fill="none" d="M 100,100 m -60,0 a 60,60 0 1,1 120,0 a 60,60 0 1,1 -120,0"/>
+        <text class="hero__seal-text">
+          <textPath href="#sealCircle" startOffset="0%">LIVE RUSSIA · СЕВАСТОПОЛЬ · ЛИЧНОЕ ДЕЛО ·</textPath>
+        </text>
+      </svg>
+      <img class="hero__emblem" src="assets/emblem-hero.png" alt="Эмблема Andrey Oreo">
+    </div>
+  </section>
+
+  <!-- ABOUT / PERSONA SWITCH -->
+  <section class="about" id="about">
+    <p class="section-label reveal">01 — Обо мне</p>
+    <h2 class="section-title reveal">Два позывных, одна служба</h2>
+    <p class="about__lede">
+      За время работы на проектах LIVE RUSSIA сменился не только сервер, но и позывной.
+      Ниже — карточка текущего личного дела и архивная карточка прежнего позывного.
+      Переключите вкладку, чтобы увидеть послужной список каждого.
+    </p>
+
+    <div class="idcard-switch" role="tablist" aria-label="Выбор личного дела">
+      <button class="idcard-switch__btn is-active" data-persona="oreo" role="tab" aria-selected="true">
+        Andrey Oreo <span class="tag tag--active">действующее</span>
+      </button>
+      <button class="idcard-switch__btn" data-persona="zetix" role="tab" aria-selected="false">
+        Frank Zetix <span class="tag tag--archive">архив</span>
+      </button>
+    </div>
+
+    <div class="idcard" id="idcard">
+      <!-- filled by JS -->
+    </div>
+  </section>
+
+  <!-- SERVICE RECORD -->
+  <section class="record" id="record">
+    <p class="section-label reveal">02 — Послужной список</p>
+    <h2 class="section-title reveal">Хронология по серверам</h2>
+    <p class="about__lede" style="margin-bottom:44px;">Каждый сервер LIVE RUSSIA — это отдельная ветка службы со своим набором должностей и статусом.</p>
+    <div class="record__body" id="recordBody">
+      <!-- filled by JS -->
+    </div>
+  </section>
+
+  <!-- CONTACTS -->
+  <section class="contacts" id="contacts">
+    <p class="section-label reveal">03 — Каналы связи</p>
+    <h2 class="section-title reveal">Как со мной связаться</h2>
+    <ul class="channels">
+      <li class="channel">
+        <span class="channel__dot"></span>
+        <span class="channel__name">VK</span>
+        <span class="channel__desc">Основная страница</span>
+        <a class="channel__link" href="https://vk.ru/forevermybeauty" target="_blank" rel="noopener">vk.ru/forevermybeauty</a>
+      </li>
+      <li class="channel">
+        <span class="channel__dot"></span>
+        <span class="channel__name">Telegram</span>
+        <span class="channel__desc">Быстрая связь</span>
+        <a class="channel__link" href="https://t.me/forevermybeauty" target="_blank" rel="noopener">t.me/forevermybeauty</a>
+      </li>
+      <li class="channel">
+        <span class="channel__dot"></span>
+        <span class="channel__name">Lolka</span>
+        <span class="channel__desc">Профиль</span>
+        <a class="channel__link" href="https://lolka.me/forevermybeauty" target="_blank" rel="noopener">lolka.me/forevermybeauty</a>
+      </li>
+      <li class="channel">
+        <span class="channel__dot"></span>
+        <span class="channel__name">Spotify</span>
+        <span class="channel__desc">Плейлист</span>
+        <a class="channel__link" href="https://open.spotify.com/playlist/1OBy4Fvgm5318JicSCEwR7" target="_blank" rel="noopener">Открыть плейлист</a>
+      </li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Личное дело ведётся в электронном виде · LIVE RUSSIA · Севастополь</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
